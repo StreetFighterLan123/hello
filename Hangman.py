@@ -32,8 +32,9 @@ if rdornot.lower() == "yes":
 	#Length of answer
 	let_in_ans = len(answer)
 	counter = 0
+	counter2 = 0
 	answer_list = []
-	for x in answer[counter]:
+	for x in answer[counter2]:
 		x = answer_list[counter]
 		counter += 1
 	guess_counter = 0
