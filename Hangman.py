@@ -39,7 +39,10 @@ if rdornot.lower() == "yes":
 	guess_counter = 0
 	for x in guesses:
 		guess_attempt = raw_input("Guess the first letter!")
-		if guess_attempt.lower() = answer_list
+		if guess_attempt.lower() in answer_list:
+			print "Good"
+		else:
+			print "Fail"
 
 
 
