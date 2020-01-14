@@ -34,9 +34,12 @@ if rdornot.lower() == "yes":
 	counter = 0
 	counter2 = 0
 	answer_list = []
-	for x in answer[counter2]:
+	for x in answer:
+		answer_list.append(x)
 		x = answer_list[counter]
 		counter += 1
+	#make lower line a comment
+	print answer_list
 	guess_counter = 0
 	for x in guesses:
 		guess_attempt = raw_input("Guess the first letter!")
