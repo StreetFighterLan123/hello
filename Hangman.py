@@ -8,7 +8,7 @@ txt = response.read()
 #Words is a list with strings in it
 lstwords = txt.splitlines()
 answer = random.choice(lstwords).lower()
-time.sleep(1)
+
 
 #print answer
 
