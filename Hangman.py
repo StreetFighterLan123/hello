@@ -11,7 +11,9 @@ answer = random.choice(lstwords).lower()
 
 
 #print answer
-
+def makeitadash(x):
+	x = '_ ' * len(x)
+	return x
 #ANSWER IS THE WORD YOU ARE GUESSING FOR
 #Start game
 question = raw_input("Hello, welcome to hangman. What's your name?: ")
@@ -26,8 +28,12 @@ if rdornot.lower() == "yes":
 	#Starting guesses is going to be going down
 	guesses = [1,2,3,4,5,6,7,8,9,10]
 	#Dashes is the one it's going to print
-	amount_of_dashes = '_ ' * len(answer)  
+	counter_answer_original_for_dash_substituion = []
+	amount_of_dashes = ['_ ' * len(answer)]
+	for x in answer:
+		counter_answer_original_for_dash_substituion.append(makeitadash(x))
 	print amount_of_dashes
+	print counter_answer_original_for_dash_substituion
 	let_in_ans = 0
 	#Length of answer
 	let_in_ans = len(answer)
@@ -45,6 +51,7 @@ if rdornot.lower() == "yes":
 		guess_attempt = raw_input("Guess the first letter!")
 		if guess_attempt.lower() in answer_list:
 			print "Good"
+			#Now we have to find the one you said and make it show in the list.
 		else:
 			print "Fail"
 
