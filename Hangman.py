@@ -38,7 +38,6 @@ if rdornot.lower() == "yes":
 	#Length of answer
 	let_in_ans = len(answer)
 	counter = 0
-	counter2 = 0
 	answer_list = []
 	for x in answer:
 		answer_list.append(x)
@@ -56,11 +55,9 @@ if rdornot.lower() == "yes":
 			print "Fail"
 
 
-
-
 elif rdornot.lower() == "no":
-	print "Okay"
+	print "Okay. Have fun next time!"
 	sys.exit()
 else:
-	print "That's not an option baka"
+	print "That's not an option baka."
 	sys.exit()
