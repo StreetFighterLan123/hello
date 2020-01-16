@@ -2,7 +2,7 @@ import urllib2
 import random
 import time
 import sys
-word_site = "http://svnweb.freebsd.org/csrg/share/dict/words?view=co&content-ty$
+word_site ="http://svnweb.freebsd.org/csrg/share/dict/words?view=co&content-type=text/plain"
 response = urllib2.urlopen(word_site)
 txt = response.read()
 #Words is a list with strings in it
@@ -25,15 +25,15 @@ print "Oh, hi %s" % (question)
 time.sleep(1)
 #Ready to start or not
 rdornot = raw_input("Are you ready to start playing hangman?: ")
-if rdornot.lower() == "yes":
-        while len(turns) > 0:              
-                for x in answer:
-                        if x in guesses:
-                                print x,
-                        else:
-                                print "_",
-            
-                        
+if rdornot.lower() == "yes":             
+  for x in answer:
+    if x in guesses:
+      print x,
+    else:
+      print "_",
+  guess = "What is your guess?"          
+  guesses += guess
+  if guess not in words:
+    #remove the thing
                         
                 
-
