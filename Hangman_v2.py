@@ -9,7 +9,8 @@ txt = response.read()
 lstwords = txt.splitlines()
 answer = random.choice(lstwords).lower()
 
-guesses = [1,2,3,4,5,6,7,8,9,10]
+turns = [1,2,3,4,5,6,7,8,9,10]
+guesses = ''
 
 
 #print answer
@@ -25,6 +26,14 @@ time.sleep(1)
 #Ready to start or not
 rdornot = raw_input("Are you ready to start playing hangman?: ")
 if rdornot.lower() == "yes":
-        #while len(guesses) > 0:
+        while len(turns) > 0:              
+                for x in answer:
+                        if x in guesses:
+                                print x,
+                        else:
+                                print "_",
+            
+                        
+                        
                 
 
