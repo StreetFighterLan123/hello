@@ -9,6 +9,8 @@ txt = response.read()
 lstwords = txt.splitlines()
 answer = random.choice(lstwords).lower()
 
+guesses = [1,2,3,4,5,6,7,8,9,10]
+
 
 #print answer
 def makeitadash(x):
@@ -22,4 +24,7 @@ print "Oh, hi %s" % (question)
 time.sleep(1)
 #Ready to start or not
 rdornot = raw_input("Are you ready to start playing hangman?: ")
-#if rdornot.lower() == "yes":
+if rdornot.lower() == "yes":
+        #while len(guesses) > 0:
+                
+
