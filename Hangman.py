@@ -56,8 +56,6 @@ if rdornot.lower() == "yes":
 			print "Fail"
 
 
-
-
 elif rdornot.lower() == "no":
 	print "Okay"
 	sys.exit()
