@@ -50,6 +50,7 @@ if rdornot.lower() == "yes":
 		guess_attempt = raw_input("Guess the first letter!")
 		if guess_attempt.lower() in answer_list:
 			print "Good"
+			counter_answer_original_for_dash_substituion.remove(guess_attempt.lower())
 			#Now we have to find the one you said and make it show in the list.
 		else:
 			print "Fail"
