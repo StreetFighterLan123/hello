@@ -1,4 +1,4 @@
-Hi my name is Omar. It says Tanveer not Omar because I am using Git from a laptop that isn't mine, and I don't know how to change it.
+Hi my name is Omar. I'm trying to make a Hangman Game.
 ====
 Hangman:
 
