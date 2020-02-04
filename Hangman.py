@@ -50,9 +50,9 @@ if rdornot.lower() == "yes":
 		guess_attempt = raw_input("Guess the first letter!")
 		if guess_attempt.lower() in answer_list:
 			print "Good"
-			removed = answer_list.remove(guess_attempt.lower())
-			difference = len(answer_list) - len(removed)
-			print difference
+			#removed = answer_list.remove(guess_attempt.lower())
+			#difference = len(answer_list) - len(removed)
+			#print difference
 			answer_list.remove(guess_attempt.lower())
 			#Now we have to find the one you said and make it show in the list.
 			amount_of_dashes = ['_ ' * len(counter_answer_original_for_dash_substituion)]
