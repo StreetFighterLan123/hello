@@ -1,4 +1,8 @@
 Hi my name is Omar. I'm trying to make a Hangman Game.
+
+For some reason it says "Mahallon" is making edits (even though it's me from my Raspberry Pi) and it says Tanveer Ansari is making edits (which is me from a Laptop).
+
+Just know that these are both me and I think Github is broken or being a meanie.
 ====
 Hangman:
 
