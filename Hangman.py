@@ -58,6 +58,8 @@ if rdornot.lower() == "yes":
 			amount_of_dashes = ['_ ' * len(counter_answer_original_for_dash_substituion)]
 			print counter_answer_original_for_dash_substituion
 			print amount_of_dashes
+			print answer_list
+			#make the print answer_list a comment later on
 		else:
 			print "Fail"
 
