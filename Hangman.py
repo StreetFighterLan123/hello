@@ -7,8 +7,14 @@ response = urllib2.urlopen(word_site)
 txt = response.read()
 #Words is a list with strings in it
 lstwords = txt.splitlines()
-answer = random.choice(lstwords).lower()
-
+answer = random.choice(lstwords).lower() 
+#makes it so that it shouldn't be more than 10 letters
+r = 1
+while r = 1:
+	if len(answer) > 10:
+		answer = random.choice(lstwords).lower()
+		ir len(answer) < 10:
+			r = 0
 
 #print answer
 def makeitadash(x):
