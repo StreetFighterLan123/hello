@@ -58,7 +58,7 @@ if rdornot.lower() == "yes":
 			counter_answer_original_for_dash_substituion = ['_ ' * len(answer_list)]
 			#amount_of_dashes = ['_ ' * len(counter_answer_original_for_dash_substituion)]
 			#That would just make it one so our counter thing is now our amount.
-			print guess_attempt.lower() + counter_answer_original_for_dash_substituion
+			print guess_attempt.lower() + counter_answer_original_for_dash_substituion[1]
 			#print amount_of_dashes
 			print answer_list
 			#make the print answer_list a comment later on
