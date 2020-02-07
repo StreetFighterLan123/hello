@@ -22,6 +22,7 @@ def makeitadash(x):
 	return x
 #ANSWER IS THE WORD YOU ARE GUESSING FOR
 #Start game
+rista = []
 question = raw_input("Hello, welcome to hangman. What's your name?: ")
 time.sleep(1)
 print "Oh, hi %s" % (question)
@@ -64,9 +65,13 @@ if rdornot.lower() == "yes":
 			counter_answer_original_for_dash_substituion = ['_ ' * len(answer_list)]
 			#amount_of_dashes = ['_ ' * len(counter_answer_original_for_dash_substituion)]
 			#That would just make it one so our counter thing is now our amount.
-			print guess_attempt.lower() + counter_answer_original_for_dash_substituion[0]
-			#print amount_of_dashes
+			rista.append(guess_attempt.lower())
+			#print guess_attempt.lower() + counter_answer_original_for_dash_substituion[0]
+			for x in rista:
+				print x
+			print counter_answer_original_for_dash_substituion[0]
 			print answer_list
+			print rista
 			#make the print answer_list a comment later on
 		else:
 			print "Fail"
