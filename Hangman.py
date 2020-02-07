@@ -13,7 +13,7 @@ r = 1
 while r == 1:
 	if len(answer) > 10:
 		answer = random.choice(lstwords).lower()
-		ir len(answer) < 10:
+		if len(answer) < 10:
 			r = 0
 
 #print answer
