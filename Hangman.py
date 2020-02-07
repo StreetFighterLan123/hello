@@ -56,9 +56,10 @@ if rdornot.lower() == "yes":
 			answer_list.remove(guess_attempt.lower())
 			#Now we have to find the one you said and make it show in the list.
 			counter_answer_original_for_dash_substituion = ['_ ' * len(answer_list)]
-			amount_of_dashes = ['_ ' * len(counter_answer_original_for_dash_substituion)]
+			#amount_of_dashes = ['_ ' * len(counter_answer_original_for_dash_substituion)]
+			#That would just make it one so our counter thing is now our amount.
 			print counter_answer_original_for_dash_substituion
-			print amount_of_dashes
+			#print amount_of_dashes
 			print answer_list
 			#make the print answer_list a comment later on
 		else:
