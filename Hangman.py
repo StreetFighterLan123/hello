@@ -10,7 +10,7 @@ lstwords = txt.splitlines()
 answer = random.choice(lstwords).lower() 
 #makes it so that it shouldn't be more than 10 letters
 r = 1
-while r = 1:
+while r == 1:
 	if len(answer) > 10:
 		answer = random.choice(lstwords).lower()
 		ir len(answer) < 10:
