@@ -51,7 +51,7 @@ if rdornot.lower() == "yes":
 		x = answer_list[counter]
 		counter += 1
 	#make lower line a comment
-	#print answer_list
+	print answer_list
 	guess_counter = 0
 	for x in guesses:
 		guess_attempt = raw_input("Guess the first letter!")
@@ -70,9 +70,12 @@ if rdornot.lower() == "yes":
 			for x in rista:
 				print x
 			print counter_answer_original_for_dash_substituion[0]
-			#print answer_list
+			print answer_list
 			print rista
 			#make the print answer_list a comment later on
+		elif len(answer_list = 0):
+			print "You win!"
+			sys.exit()
 		else:
 			print "Fail"
 
