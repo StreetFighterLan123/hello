@@ -54,7 +54,7 @@ if rdornot.lower() == "yes":
 	print answer_list
 	guess_counter = 0
 	for x in guesses:
-		guess_attempt = raw_input("Guess the first letter!")
+		guess_attempt = raw_input("Guess the letter!")
 		if guess_attempt.lower() in answer_list:
 			print "Good"
 			#removed = answer_list.remove(guess_attempt.lower())
